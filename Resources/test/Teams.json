@@ -1,0 +1,299 @@
+[
+  {
+    "id": 1,
+    "name": "Atlanta United",
+    "color": "#80000A",
+    "coords": [
+      {
+        "lat": 33.755,
+        "long": -84.400
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Austin FC",
+    "color": "#00B140",
+    "coords": [
+      {
+        "lat": 30.38773,
+        "long": -97.71956
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Chicago Fire",
+    "color": "#121F48",
+    "coords": [
+      {
+        "lat": 41.862,
+        "long": -87.617
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "FC Cincinnati",
+    "color": "#FE5000",
+    "coords": [
+      {
+        "lat": 39.11103,
+        "long": -84.52286
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Colorado Rapids",
+    "color": "#862633",
+    "coords": [
+      {
+        "lat": 39.80568,
+        "long": -104.89178
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "DC United",
+    "color": "#EE1A39",
+    "coords": [
+      {
+        "lat": 38.83840,
+        "long": -77.01285
+      }
+    ]
+  }
+  {
+    "id": 7,
+    "name": "FC Dallas",
+    "color": "#D11241",
+    "coords": [
+      {
+        "lat": 33.15431,
+        "long": -96.83517
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Houston Dynamo",
+    "color": "#121F48",
+    "coords": [
+      {
+        "lat": 29.75224,
+        "long": -95.35224
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Inter Miami",
+    "color": "#F7B5CD",
+    "coords": [
+      {
+        "lat": 26.19329,
+        "long": -80.16067
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "LA Galaxy",
+    "color": "#00245D",
+    "coords": [
+      {
+        "lat": 33.86434,
+        "long": -118.26112
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Los Angeles FC",
+    "color": "#000000",
+    "coords": [
+      {
+        "lat": 34.01277,
+        "long": -118.28405
+      }
+    ]
+  }
+  {
+    "id": 12,
+    "name": "Minnesota United",
+    "color": "#585958",
+    "coords": [
+      {
+        "lat": 44.95311,
+        "long": -93.16470
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "CF Montreal",
+    "color": "#2B63AD",
+    "coords": [
+      {
+        "lat": 45.56307,
+        "long": -73.55266
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "New England Revolution",
+    "color": "#E51938",
+    "coords": [
+      {
+        "lat": 42.09094,
+        "long": -71.26435
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "NYCFC",
+    "color": "#862633",
+    "coords": [
+      {
+        "lat": 40.82964,
+        "long": -73.92624
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "NY Redbulls",
+    "color": "#FEF200",
+    "coords": [
+      {
+        "lat": 40.73687,
+        "long": -74.15031
+      }
+    ]
+  }
+  {
+    "id": 17,
+    "name": "Orlando City SC",
+    "color": "#80000A",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Philadelphia Union",
+    "color": "#121F48",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Portland Timbers",
+    "color": "#FE5000",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Real Salt Lake",
+    "color": "#862633",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "San Jose Earthquakes",
+    "color": "#FEF200",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Seattle Sounders",
+    "color": "#121F48",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Sporting Kansas City",
+    "color": "#FE5000",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Toronto FC",
+    "color": "#862633",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Vancouver Whitecaps",
+    "color": "#FEF200",
+    "coords": [
+      {
+        "lat": 1,
+        "long": 2
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Columbus Crew",
+    "color": "#121F48",
+    "coords": [
+      {
+        "lat": 39.96851,
+        "long": -83.01730
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Nashville SC",
+    "color": "#FE5000",
+    "coords": [
+      {
+        "lat": 36.16646,
+        "long": -86.77127
+      }
+    ]
+  }
+]
