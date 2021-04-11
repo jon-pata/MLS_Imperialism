@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 * {
-/*    font-family: 'Source Sans Pro', sans-serif;*/
+    /*    font-family: 'Source Sans Pro', sans-serif;*/
     font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
 }
 
@@ -25,11 +25,11 @@ body {
 
 h1 {
     color: black;
-        font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
 }
 
 svg {
-    background-color: #305555;
+    background-color: #e7f0fa;
 
 
     /*
@@ -62,9 +62,9 @@ svg {
 
 
 #date_range {
-/*    font-family: 'Source Sans Pro', sans-serif;*/
+    /*    font-family: 'Source Sans Pro', sans-serif;*/
     color: black;
-        font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
 }
 
 
