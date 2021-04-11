@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"
+        integrity="sha256-tHoAPGoNdhIR28YHl9DWLzeRfdwigkH7OCBXMrHXhoM=" crossorigin="anonymous"></script>
+    <title>Choropleth Map</title>
+</head>
+
+<body>
+    <h2 id='title'>United States Adult Education</h2>
+    <div id='container'>
+        <svg id='canvas'>
+
+        </svg>
+        <div id='rightSide'>
+            <div id='tooltip'>
+
+            </div>
+            <div class="legend">
+                <div class="team" id="atl">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Atlanta United</div>
+                </div>
+                <div class="team" id="chi">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Chicago Fire</div>
+                </div>
+                <div class="team" id="cin">
+                    <div class="teamColor"></div>
+                    <div class="teamName">FC Cincinnati</div>
+                </div>
+                <div class="team" id="col">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Colorado Rapids</div>
+                </div>
+
+                <div class="team" id="crew">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Colombus Crew</div>
+                </div>
+                <div class="team" id="dcu">
+                    <div class="teamColor"></div>
+                    <div class="teamName">DC United</div>
+                </div>
+                <div class="team" id="fcd">
+                    <div class="teamColor"></div>
+                    <div class="teamName">FC Dallas</div>
+                </div>
+                <div class="team" id="hou">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Houston Dynamo</div>
+                </div>
+
+                <div class="team" id="mia">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Inter Miami</div>
+                </div>
+                <div class="team" id="lag">
+                    <div class="teamColor"></div>
+                    <div class="teamName">LA Galaxy</div>
+                </div>
+                <div class="team" id="lafc">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Los Angeles FC</div>
+                </div>
+                <div class="team" id="min">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Minnesota United</div>
+                </div>
+
+                <div class="team" id="cfm">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Club de Foot Montreal</div>
+                </div>
+                <div class="team" id="ner">
+                    <div class="teamColor"></div>
+                    <div class="teamName">New England Revolution</div>
+                </div>
+                <div class="team" id="nyc">
+                    <div class="teamColor"></div>
+                    <div class="teamName">New York City FC</div>
+                </div>
+                <div class="team" id="nyrb">
+                    <div class="teamColor"></div>
+                    <div class="teamName">NY Red Bulls</div>
+                </div>
+
+                <div class="team" id="orl">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Orlando City SC</div>
+                </div>
+                <div class="team" id="phi">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Philadelphia Union</div>
+                </div>
+                <div class="team" id="por">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Portland Timbers</div>
+                </div>
+                <div class="team" id="rsl">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Real Salt Lake</div>
+                </div>
+
+                <div class="team" id="sj">
+                    <div class="teamColor"></div>
+                    <div class="teamName">San Jose Earthquakes</div>
+                </div>
+                <div class="team" id="sea">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Seattle Sounders</div>
+                </div>
+                <div class="team" id="skc">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Sporting Kansas City</div>
+                </div>
+                <div class="team" id="tor">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Toronto FC</div>
+                </div>
+
+                <div class="team" id="van">
+                    <div class="teamColor"></div>
+                    <div class="teamName">Vancouver Whitecaps</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script defer src='index.js'></script>
+<script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+
+</html>
