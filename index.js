@@ -1,5 +1,6 @@
 let countyURL = 'https://cdn.freecodecamp.org/testable-projects-fcc/data/choropleth_map/counties.json'
-let educationURL = 'https://raw.githubusercontent.com/jon-pata/MLS_Imperialism/dev-april/Resources/test/Instances.json'
+//let educationURL = 'https://raw.githubusercontent.com/jon-pata/MLS_Imperialism/dev-april/Resources/test/Instances.json'
+let educationURL = 'https://raw.githubusercontent.com/jon-pata/MLS_Imperialism/dev-april/scripts/newStartingData.json'
 
 let countyData
 let educationData
