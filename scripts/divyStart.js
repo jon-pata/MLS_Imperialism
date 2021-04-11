@@ -29,6 +29,10 @@ function getAllCentroids(){
     //console.log(feature.properties.NAME);
     let countyTemp = {};
 
+    if(feature.properties.NAME == "Jackson"){
+      console.log('hi')
+    }
+
     let centroid = geometry.type == 'Polygon' ? getPolygonCentroid(geometry.coordinates[0]) : getMultiPolygonCentroid(geometry.coordinates)
 
     countyTemp.fips = feature.properties.STATE + feature.properties.COUNTY;
@@ -71,8 +75,8 @@ function getMultiPolygonCentroid(polys){
   let clat = 0;
   for(let poly of polys){
     let polyCentroid = getPolygonCentroid(poly[0])
-    clong += polyCentroid[0]
-    clat += polyCentroid[1]
+    clong += polyCentroid[1]
+    clat += polyCentroid[0]
   }
   clong /= polys.length
   clat /= polys.length

@@ -157,7 +157,7 @@ var teams = [
     {
       "id": 8,
       "name": "Houston Dynamo",
-      "color": "#121F48",
+      "color": "#F4911E",
       "coords": [
         29.75224,
         -95.35224
@@ -202,7 +202,7 @@ var teams = [
     {
       "id": 13,
       "name": "CF Montreal",
-      "color": "#2B63AD",
+      "color": "#28477D",
       "coords": [
         45.56307,
         -73.55266
@@ -211,7 +211,7 @@ var teams = [
     {
       "id": 14,
       "name": "New England Revolution",
-      "color": "#E51938",
+      "color": "#002B5C",
       "coords": [
         42.09094,
         -71.26435
@@ -220,7 +220,7 @@ var teams = [
     {
       "id": 15,
       "name": "NYCFC",
-      "color": "#862633",
+      "color": "#6CACE4",
       "coords": [
         40.82964,
         -73.92624
@@ -229,7 +229,7 @@ var teams = [
     {
       "id": 16,
       "name": "NY Redbulls",
-      "color": "#FEF200",
+      "color": "#E31351",
       "coords": [
         40.73687,
         -74.15031
@@ -238,7 +238,7 @@ var teams = [
     {
       "id": 17,
       "name": "Orlando City SC",
-      "color": "#80000A",
+      "color": "#61259E",
       "coords": [
         28.54108,
         -81.38904
@@ -247,7 +247,7 @@ var teams = [
     {
       "id": 18,
       "name": "Philadelphia Union",
-      "color": "#121F48",
+      "color": "#002D55",
       "coords": [
         39.83281,
         -75.37849
@@ -256,7 +256,7 @@ var teams = [
     {
       "id": 19,
       "name": "Portland Timbers",
-      "color": "#FE5000",
+      "color": "#00482B",
       "coords": [
         45.52159,
         -122.69180
@@ -265,7 +265,7 @@ var teams = [
     {
       "id": 20,
       "name": "Real Salt Lake",
-      "color": "#862633",
+      "color": "#B30838",
       "coords": [
         40.58293,
         -111.89336
@@ -274,7 +274,7 @@ var teams = [
     {
       "id": 21,
       "name": "San Jose Earthquakes",
-      "color": "#FEF200",
+      "color": "#30457A",
       "coords": [
         37.35114,
         -121.92465
@@ -283,7 +283,7 @@ var teams = [
     {
       "id": 22,
       "name": "Seattle Sounders",
-      "color": "#121F48",
+      "color": "#658D1B",
       "coords": [
         47.59516,
         -122.33164
@@ -292,7 +292,7 @@ var teams = [
     {
       "id": 23,
       "name": "Sporting Kansas City",
-      "color": "#FE5000",
+      "color": "#93B1D7",
       "coords": [
         39.12159,
         -94.82321
@@ -301,7 +301,7 @@ var teams = [
     {
       "id": 24,
       "name": "Toronto FC",
-      "color": "#862633",
+      "color": "#AB1E2D",
       "coords": [
         43.63323,
         -79.41858
@@ -310,7 +310,7 @@ var teams = [
     {
       "id": 25,
       "name": "Vancouver Whitecaps",
-      "color": "#FEF200",
+      "color": "#84868C",
       "coords": [
         49.27678,
         -123.11200
@@ -319,7 +319,7 @@ var teams = [
     {
       "id": 26,
       "name": "Columbus Crew",
-      "color": "#121F48",
+      "color": "#FEF200",
       "coords": [
         39.96851,
         -83.01730
@@ -328,7 +328,7 @@ var teams = [
     {
       "id": 27,
       "name": "Nashville SC",
-      "color": "#FE5000",
+      "color": "#f6d04e",
       "coords": [
         36.16646,
         -86.77127
