@@ -34,8 +34,8 @@ function getAllCentroids(){
     countyTemp.fips = feature.properties.STATE + feature.properties.COUNTY;
     if(countyTemp.fips.startsWith('0')){
       countyTemp.fips = countyTemp.fips.substring(1);
-      countyTemp.fips = parseInt(countyTemp.fips);
     }
+    countyTemp.fips = parseInt(countyTemp.fips);
     countyTemp.state = feature.properties.STATE;
     countyTemp.name = feature.properties.NAME;
     countyTemp.centroid = centroid;

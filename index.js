@@ -20,7 +20,12 @@ let drawMap = () => {
             let county = educationData.find((item) => {
                 return item['fips'] === id
             })
-            let teamId = county['teamId']
+            let teamId;
+            if(county !== undefined){
+                teamId = county['teamId']
+            }else{
+                teamId = 1;
+            }
             return teams[teamId-1].color
             // if (teamId == 1) {
             //     return teams[0].color
@@ -35,14 +40,14 @@ let drawMap = () => {
         .attr('data-fips', (countyDataItem) => {
             return countyDataItem['id']
         })
-        .attr('data-education', (countyDataItem) => {
-            let id = countyDataItem['id']
-            let county = educationData.find((item) => {
-                return item['fips'] === id
-            })
-            let percentage = county['bachelorsOrHigher']
-            return percentage
-        })
+        // .attr('data-education', (countyDataItem) => {
+        //     let id = countyDataItem['id']
+        //     let county = educationData.find((item) => {
+        //         return item['fips'] === id
+        //     })
+        //     let percentage = county['bachelorsOrHigher']
+        //     return percentage
+        // })
         .on('mouseover', (countyDataItem) => {
             tooltip.transition()
                 .style('visibility', 'visible')
