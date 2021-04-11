@@ -5,6 +5,8 @@
 const fetch = require('node-fetch')
 const counties = require('../Resources/test/gz_2010_us_050_00_500k.json')
 const teams = require('../Resources/test/Teams.json')
+const mathjs = require('mathjs')
+const fs = require('fs');
 
 if(process.argv.length == 2){
   main(process.argv);
@@ -14,20 +16,34 @@ if(process.argv.length == 2){
 
 function main(args){
   console.log(args)
-  getAllCentroids();
+  let data = JSON.stringify(getAllCentroids());
+  fs.writeFileSync('newStartingData.json', data)
 }
 
 function getAllCentroids(){
   let features = counties.features;
+  countyCentroids =[]
 
   for (let feature of features){
     let geometry = feature.geometry
-    console.log(feature.properties.NAME);
+    //console.log(feature.properties.NAME);
+    let countyTemp = {};
 
     let centroid = geometry.type == 'Polygon' ? getPolygonCentroid(geometry.coordinates[0]) : getMultiPolygonCentroid(geometry.coordinates)
 
-    console.log(centroid)
+    countyTemp.fips = feature.properties.STATE + feature.properties.COUNTY;
+    if(countyTemp.fips.startsWith('0')){
+      countyTemp.fips = countyTemp.fips.substring(1);
+    }
+    countyTemp.state = feature.properties.STATE;
+    countyTemp.name = feature.properties.NAME;
+    countyTemp.centroid = centroid;
+    countyTemp.teamId = findClosestTeam(centroid);
+
+    countyCentroids.push(countyTemp);
+    //console.log(centroid)
   }
+  return countyCentroids;
 }
 
 function getPolygonCentroid(points){
@@ -43,8 +59,8 @@ function getPolygonCentroid(points){
   }
   clat /= points.length
   clong /= points.length
-  centroid.push(clong)
   centroid.push(clat)
+  centroid.push(clong)
   return centroid
 }
 
@@ -59,7 +75,21 @@ function getMultiPolygonCentroid(polys){
   }
   clong /= polys.length
   clat /= polys.length
-  centroid.push(clong)
   centroid.push(clat)
+  centroid.push(clong)
   return centroid
+}
+
+function findClosestTeam(countyCentroid){
+  //console.log(teams)
+  let lowestDist = 10000;
+  let lowestTeam = teams[1];
+  for(let team of teams){
+    let dist = mathjs.distance(countyCentroid, team.coords);
+    if(dist < lowestDist){
+      lowestDist = dist;
+      lowestTeam = team;
+    }
+  }
+  return lowestTeam.id;
 }
