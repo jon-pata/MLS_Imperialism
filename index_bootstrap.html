@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-    <title>MLS Imperialism</title>
+    <title>Starter Template · Bootstrap</title>
 
     <!--Template based on URL below-->
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
@@ -15,16 +15,15 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!-- Place your stylesheet here-->
+   <!-- Place your stylesheet here-->
     <link href="/css/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
 
     <!-- Place your topojson url here-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js" integrity="sha256-tHoAPGoNdhIR28YHl9DWLzeRfdwigkH7OCBXMrHXhoM=" crossorigin="anonymous"></script>
 
     <!-- Place your d3 url here-->
     <script src="https://d3js.org/d3.v5.min.js"></script>
-
-
 </head>
 
 <body>
@@ -38,20 +37,17 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index_bootstrap.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About US</a>
+                    <a class="nav-link" href="#">About us</a>
                 </li>
-                <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">League</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Leagues</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                         <a class="dropdown-item" href="#">MLS</a>
-                        <a class="dropdown-item" href="#">Premier League</a>
-                        <a class="dropdown-item" href="#">Italy</a>
+                        <a class="dropdown-item" href="#">Premier League </a>
+                        <a class="dropdown-item" href="#">Italian League</a>
                     </div>
                 </li>
             </ul>
@@ -66,27 +62,41 @@
 
         <div class="text-center mt-5 pt-5">
             <h1>MLS Imperialism</h1>
-            <!--            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>-->
-        </div>
-        <svg id='canvas' width="1000" height="700">
 
-        </svg>
+        </div>
+
+        <div>
+            <svg id="canvas" width="1000">
+            </svg>
+
+        </div>
+
+
+        <h1 id="date_range" style="text-align:center;"></h1>
+
+        <div style="text-align:center;">
+            <input type="button" onClick="backward()" name="backward" value="<">
+            <input type="button" onClick="forward()" name="forward" value=">">
+
+        </div>
+
 
 
     </main><!-- /.container -->
 
-</body>
-<!-- Bootstrap core JavaScript
-    ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- Place your json and javascript file here-->
-<script defer src="Resources/test/Instances.json"></script>
-<script defer src="Resources/test/Teams.json"></script>
-<script defer src="index.js"></script>
-<!--    <script defer src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>-->
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Place your json and javascript file here-->
+    <script defer src="Resources/test/Instances.json"></script>
+    <script defer src="Resources/test/Teams.json"></script>
+    <script defer src="index.js"></script>
+    <script defer src="weeks.js"></script>
+
+</body>
 
 </html>

@@ -23,13 +23,20 @@ body {
 
 svg {
     background-color: #305555;
+
+
+    /*
     padding: 10px;
     border-radius: 5px;
+*/
+
     width: 1000;
-    height:1000;
+    height: 1000;
 }
 
 
+
+/*
 #canvas {
     position: absolute;
     width: 100%;
@@ -37,6 +44,18 @@ svg {
     border: 1px solid red;
     min-height: 900px;
     min-width: 950px;
+}
+*/
+
+
+#canvas {
+    position: absolute border:1px solid #000000;
+    min-height: 600px;
+}
+
+
+#date_range {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
