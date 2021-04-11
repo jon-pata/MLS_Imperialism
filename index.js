@@ -8,7 +8,6 @@ let canvas = d3.select('#canvas')
 let tooltip = d3.select('#tooltip')
 
 let drawMap = () => {
-
     canvas.selectAll('path')
         .data(countyData)
         .enter()
@@ -85,7 +84,6 @@ d3.json(countyURL).then(
         }
     }
 )
-
 var teams = [
     {
         "id": 1,
