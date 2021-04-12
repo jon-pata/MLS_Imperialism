@@ -2,6 +2,11 @@ body {
   margin: 15px;
 }
 
+path {
+  stroke:white;
+  stroke-width: 1px;
+}
+
 .dropdown-menu > ul {
   list-style: none;
   margin: 0;

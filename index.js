@@ -27,27 +27,12 @@ let drawMap = () => {
                 teamId = 1;
             }
             return teams[teamId-1].color
-            // if (teamId == 1) {
-            //     return teams[0].color
-            // } else if (teamId == 2) {
-            //     return 'orange'
-            // } else if (percentage <= 45) {
-            //     return 'lightgreen'
-            // } else {
-            //     return 'limegreen'
-            // }
         })
+        .style("stroke", "white")
+        .style("stroke-width", ".2px")
         .attr('data-fips', (countyDataItem) => {
             return countyDataItem['id']
         })
-        // .attr('data-education', (countyDataItem) => {
-        //     let id = countyDataItem['id']
-        //     let county = educationData.find((item) => {
-        //         return item['fips'] === id
-        //     })
-        //     let percentage = county['bachelorsOrHigher']
-        //     return percentage
-        // })
         .on('mouseover', (countyDataItem) => {
             tooltip.transition()
                 .style('visibility', 'visible')
